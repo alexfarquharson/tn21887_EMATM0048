@@ -1,0 +1,51 @@
+Main function:
+
+have while loop whilst setting game up instead of if else - fewer lines of code, tidier
+
+
+Player class:
+
+Keep attributes of player:
+	name, score, keys.
+Had the moved functions in player class but that would require board class to be referenced in player class - removed and put in board class
+
+Added in position (previously just used a find player function whenever needed player location), but by remembering player position dont need to iterate through board
+Changed to keep poision as list(x,y) instead of two separate x,y objects (neater)
+
+
+Board class:
+1. Create board
+2. Insert players (should be a board function) - amend so user can choose where they start? later/no
+3. Show function for board table
+4. Move player:
+	Takes user input so: good to use dictionary to map user input to keys (then only have to deal with key error)
+	Dictionary applied up/down/left/right function better - dont have to use long if/else logic
+
+Move functions:
+	Required: 	Update table
+			Update player positrion
+			Return if move allowed or not
+			To be modular, as will need to run multiple different game types using this function
+
+Play function:
+	Wrapper function:
+		Move players
+		Change player turn
+		Loop if move legal
+		End game if move illegal
+
+
+Simultaneous play function:
+	Trying to implement draw condition without changing move function
+	Need to handle special crashing head on case separately
+
+Exception handling:
+
+Inputs:
+	
+
+Other:
+
+
+		
+
