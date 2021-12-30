@@ -39,6 +39,10 @@ Simultaneous play function:
 	Trying to implement draw condition without changing move function
 	Need to handle special crashing head on case separately
 
+Simultaneous and computer move function would benefit from a function that checks the move is legal without performing move. Therefore split up/lef/down/right functions into check_up and move_up functions.
+Can then move simultaneously without complex else if logic.
+Can then get computer to test moves before performing them.
+For computer and simultaneous - necessary for computer to not know human input before it does its move
 Exception handling:
 
 Inputs:
