@@ -43,6 +43,17 @@ Simultaneous and computer move function would benefit from a function that check
 Can then move simultaneously without complex else if logic.
 Can then get computer to test moves before performing them.
 For computer and simultaneous - necessary for computer to not know human input before it does its move
+
+
+Step 3c:
+Attempt a dynamic programming solution:
+        A. Use random policy (equal chance of wasd)
+        B. Assign positive value of +1 to each square (state)
+        C. Time step is no. of spaces/2
+        D. No. states is no. of empty sqaures
+        
+
+    
 Exception handling:
 
 Inputs:
