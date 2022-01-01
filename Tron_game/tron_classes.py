@@ -786,7 +786,6 @@ class Board():
                                     
 # if best_coords_list is not empty get best_coords, choose random one (if theres more than one)
 # convert coords to move and check move
-        print(final_dict)
         if len(final_dict) > 0:
             best_coords_list = [(key, value) for key, value in final_dict.items() if value == max(final_dict.values())]
             rand = random.randint(0,len(best_coords_list)-1)
