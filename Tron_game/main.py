@@ -18,12 +18,12 @@ def setup():
     Function to initiate setup
         gets human input: either continues setup, repeats or ends
     '''
-    
-    begin = input("Would you like to play Tron? (y/n)").lower()
+    global begin
+    begin = [input("Would you like to play Tron? (y/n)").lower()]
     begin_dict = {'y':None,'n':None}
     try:
         list(map(lambda x: begin_dict[x],begin))[0]
-        if begin == 'n':
+        if begin == ['n']:
             print('Have a nice day')
         else:
             print('##############################')
@@ -94,13 +94,13 @@ def play_again_qu(game):
         gets human input: either plays game again, changes setup, repeats or ends
     '''
         
-    play_again = input('Would you like to play again? \n a. Yes (same setup) \n b. Yes (change setup) \n c. No \n (Type a, b or c):').lower()
+    play_again = [input('Would you like to play again? \n a. Yes (same setup) \n b. Yes (change setup) \n c. No \n (Type a, b or c):').lower()]
     play_again_dict = {'a':None,'b':None, 'c':None}
     try:
         list(map(lambda x: play_again_dict[x],play_again))[0]
-        if play_again == 'a':
+        if play_again == ['a']:
             play_game(game)
-        elif play_again == 'b':
+        elif play_again == ['b']:
             print('##############################')
             game_type_qu()
             game = initialise_game(dimension_input, player_type_input, game_type_input)
@@ -149,9 +149,10 @@ if __name__ == '__main__':
     setup()
     
 #     create game instance
-    print('\n ############################## \n Creating game...')
-    game = initialise_game(dimension_input, player_type_input, game_type_input)
-    
-#     play game code
-    play_game(game)
+    if begin == ["y"]:
+        print('\n ############################## \n Creating game...')
+        game = initialise_game(dimension_input, player_type_input, game_type_input)
+
+    #     play game code
+        play_game(game)
 
