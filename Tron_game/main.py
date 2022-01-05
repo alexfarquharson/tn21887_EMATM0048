@@ -1,3 +1,6 @@
+# Alexander Farquharson, TRON GAME, script for setting up game and managing the run of the game
+
+
 ########
 # Import game classes
 ########

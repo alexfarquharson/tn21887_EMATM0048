@@ -1,3 +1,6 @@
+# Alexander Farquharson, TRON GAME, script for creating the board and player classes for the Tron game
+
+
 # import standard libraries
 import random
 import copy
