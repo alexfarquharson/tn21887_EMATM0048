@@ -1,11 +1,9 @@
-# SDPA_coursework
-* Repo containing all SDPA coursework
-
+# Software development pratice.
 ### Structure
-* Coursework split into three subdirectories:
-   * Tron_game: Part 1 of coursework
-   * Sorting_algorithm: Part 2 of coursework
-   * Data_analytics: Part 3 of coursework
+* Three subdirectories:
+   * Tron_game: text based python-built game
+   * Sorting_algorithm: exploring sorting algorithm efficiency
+   * Data_analytics: exploring data scraping and data analytics (twitter data)
 
 ### External code:
 * Some of the code requires the prior installation of the following publicly available non-standard packages using pip (or another installer programme):
